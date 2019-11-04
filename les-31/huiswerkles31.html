@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  content="text/html; charset=UTF-8"  http-equiv="content-type">
+    <title>huiswerk-les31</title>
+    <style  type="text/css">
+      <!--
+      td{width: 250px;}
+      td.even {background-color: aqua;}
+      td.oneven {background-color: lime;}
+      th {background-color: #6666FF;}
+      -->
+    </style>
+    <script  type="text/JavaScript">
+      <!--
+      // variabelen
+      var kleur = (setkleur); //kleur
+      var dier = (setdier); //dier
+      var food = (setfood); //food
+
+      function setkleur(waarde) {
+        kleur = waarde ;
+      }  
+
+      function setdier(waarde) {
+        dier = waarde ;
+      }
+
+      function setfood(waarde) {
+        food = waarde ;
+      }
+
+      function klik() {
+        
+        window.alert("Uw "+kleur+" "+dier+" eet graag "+food.);
+      }
+      -->
+    </script>
+  </head>
+  <body>
+    <table  style="width: 600px">
+      <tbody>
+        <tr>
+          <td  class="oneven">Uw lievelingskleur is:</td>
+          <td  class="even"  onclick="setkleur('blauwe')">Blauw</td>
+          <td  class="even"  onclick="setkleur('groene')">Groen</td>
+          <td  class="even"  onclick="setkleur('rode')">Rood</td>
+        </tr>
+        <tr>
+          <td  class="oneven">Uw lievelingsdier is:</td>
+          <td  class="even"  onclick="setdier('slang')">Slang</td>
+          <td  class="even"  onclick="setdier('tijger')">Tijger</td>
+          <td  class="even"  onclick="setdier('panda')">Panda</td>
+        </tr>
+        <tr>
+          <td  class="oneven">Uw lievelings eten is:</td>
+          <td  class="even"  onclick="setfood('steak')">Steak</td>
+          <td  class="even"  onclick="setfood('fast')">Fast food</td>
+          <td  class="even"  onclick="setfood('kaas')">Kaas</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(klik());">Klik hier</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

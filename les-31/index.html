@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Choose your likings and show your selection</h3>
+    <table  style="width: 600px">
+        <tbody>
+          <tr>
+            <td>Select your Favorite Color:</td>
+            <td onclick="setColor(this)">Blue</td>
+            <td onclick="setColor(this)">Green</td>
+            <td onclick="setColor(this)">Deeppink</td>
+          </tr>
+          <tr>
+            <td  class="oneven">Select your Favorite Animal:</td>
+            <td onclick="setAnimal(this)">Snake</td>
+            <td onclick="setAnimal(this)">Tiger</td>
+            <td onclick="setAnimal(this)">Panda</td>
+          </tr>
+          <tr>
+            <td  class="oneven">Select your Favorite Food:</td>
+            <td onclick="setFood(this)">Mice</td>
+            <td onclick="setFood(this)">Antilope</td>
+            <td onclick="setFood(this)">Bamboo</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="showSelection(this);">Show Selection</button>
+      <div id="result">
+
+      </div>
+    <script src="./index.js"></script>
+</body>
+</html>
